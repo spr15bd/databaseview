@@ -1,0 +1,110 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+  	<jsp-version>2.0</jsp-version>
+  	<short-name>TLDFile</short-name>
+
+  	<tag>
+		<name>sqlquery</name>
+		<tag-class>dbView.QueryTextAreaTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag displays the bulk of the dbView project's query page jsp</description>
+	</tag>
+	<tag>
+		<name>displayschema</name>
+		<tag-class>dbView.DisplaySchemaTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag displays the html table with a user's database account</description>
+	</tag>
+	<tag>
+		<name>resetschema</name>
+		<tag-class>dbView.ResetSchemaTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag refreshes the user's session attributes 'dbusername' and 'password', every time the user goes to the 'Connect' jsp</description>
+	</tag>
+	<tag>
+		<name>terminatesession</name>
+		<tag-class>dbView.EndSessionTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>Ensures the session is terminated when the user logs out voluntarily</description>
+	</tag>
+	<tag>
+		<name>sqllog</name>
+		<tag-class>dbView.DisplaySQLLogTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is used to display the SQL log data</description>
+	</tag>
+	<tag>
+		<name>displaymessage</name>
+		<tag-class>dbView.MessageTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is used when a message has to be displayed on one of the jsps</description>
+	</tag>
+	<tag>
+		<name>checksession</name>
+		<tag-class>dbView.CheckSessionTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is used to ensure there is a valid session on every jsp</description>
+	</tag>
+	<tag>
+		<name>displaycurrentuser</name>
+		<tag-class>dbView.DisplayCurrentUserTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is to display the name of the user currently logged in</description>
+	</tag>
+	<tag>
+		<name>displayqueryresults</name>
+		<tag-class>dbView.DisplayQueryResultsTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is to display the results of the query</description>
+	</tag>
+	<tag>
+		<name>displayhorizontalmenu</name>
+		<tag-class>dbView.HorizontalMenuTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is to display the horizontal menu at the top of most pages</description>
+	</tag>
+	<tag>
+		<name>querytextarea</name>
+		<tag-class>dbView.QueryTextAreaTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is to display the textarea with which the user types sql queries.</description>
+	</tag>
+	<tag>
+		<name>displayerrordetails</name>
+		<tag-class>dbView.ErrorPageTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>Displays error info on exceptions thrown.</description>
+	</tag>
+	<tag>
+		<name>displayverticalmenu</name>
+		<tag-class>dbView.VerticalMenuTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is to display the vertical menu at the left hand side of all pages; it varies according to the jsp it is on.</description>
+		<attribute>
+			<name>jspPage</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+	<tag>
+		<name>encodeurl</name>
+		<tag-class>dbView.EncodeUrlTag</tag-class>
+		<body-content>jsp</body-content>
+		<description>This tag is to encode urls so that they will work even if cookies are disabled.</description>
+		<attribute>
+			<name>url</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+	<tag>
+		<name>BackLink</name>
+		<tagclass>com.cj.back.backLinkTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Link for Back button simulation</info>
+
+		<attribute>
+		<name>text</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
