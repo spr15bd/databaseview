@@ -59,17 +59,16 @@ public class DBViewServlet extends HttpServlet {
 			dbm("About to enter userDetails()");
 			String[]userDetails=getUserDetails(request, response, action);
 			if (userDetails[0]!=null && userDetails[0].trim().length()>0 && userDetails[1]!=null && userDetails[1].trim().length()>0) {
-<<<<<<< HEAD
+
 				connect=new GetData(request, response, "u£!sR561lE7", "!jT5sE69LkD", "jdbc:mysql://127.8.226.2:3306", "databaseview");
 				//connect=new GetData(request, response, "adminf33srsY", "m_YDk9y5fAbi", "jdbc:mysql://127.2.210.2:3306", "databaseview");
-=======
+
 				//connect=new GetData(request, response, "adminxUaHXqi", "fcPCWIKuWsHr", "jdbc:mysql://127.8.226.2:3306", "webstore");
 				//connect=new GetData(request, response, "adminxUaHXqi", "fcPCWIKuWsHr", "jdbc:mysql://127.8.226.2:3306", "webstore");
 				connect=new GetData(request, response, "adminxUaHXqi", "fcPCWIKuWsHr", "jdbc:mysql://127.2.210.1:8080", "webstore");
 				//connect=new GetData(request, response, "adminxUaHXqi", "fcPCWIKuWsHr", "jdbc:mysql://"+System.getenv("OPENSHIFT_<MYSQL>_DB_HOST")+":"+System.getenv("OPENSHIFT_<MYSQL>_DB_HOST"), System.getenv("OPENSHIFT_<MYSQL>_DB_PORT"));
 				
 
->>>>>>> parent of 2f9397e... Amended servlet
 				dbm("UserDetails0:"+userDetails[0]);
 				dbm("UserDetails1:"+userDetails[1]);
 				dbm("UserDetails2:"+userDetails[2]);
